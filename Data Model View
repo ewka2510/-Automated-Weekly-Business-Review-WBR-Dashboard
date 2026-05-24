@@ -1,0 +1,29 @@
+## 📊 Detailed Telephony Performance Dataset (Data Model View)
+
+The table below represents the comprehensive data structure extracted and transformed via Power Query. This multi-layered schema allows for deep-dive root cause analysis of call center metrics (e.g., first-attempt success rates and granular drop percentages):
+
+
+| DateSelector | Total ContactIDs | Outbound Calls | OB Connected | OB Not Connected | Total Incoming | Inbound (IB) Calls | IB Answered | IB Ans. First Attempt | IB Ans. After First Attempt | Abandoned IB Calls | % Abandoned Calls | SLA 20 Sec | Missed Calls 20s | % Missed Calls 20s | % Call Drop | Day of Week | Day Number | Previous Week |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Sat, May 16, 2026** | 25 | 14 | 5 | 9 | 11 | 11 | 11 | 11 | 0 | 0 | 0.00% | 100.0% | 0 | 0.00% | 0 | Sat | 7 | 20 |
+| **Fri, May 15, 2026** | 137 | 55 | 28 | 27 | 82 | 77 | 76 | 76 | 0 | 1 | 0.00% | 96.3% | 0 | 0.00% | 0 | Fri | 6 | 20 |
+| **Thu, May 14, 2026** | 105 | 65 | 42 | 23 | 40 | 37 | 36 | 35 | 1 | 1 | 0.00% | 94.9% | 1 | 2.50% | 0 | Thu | 5 | 20 |
+| **Wed, May 13, 2026** | 121 | 68 | 48 | 20 | 53 | 45 | 43 | 41 | 2 | 2 | 0.00% | 92.2% | 2 | 3.77% | 0 | Wed | 4 | 20 |
+| **Tue, May 12, 2026** | 131 | 79 | 55 | 24 | 52 | 49 | 49 | 46 | 3 | 0 | 0.00% | 92.3% | 3 | 5.77% | 0 | Tue | 3 | 20 |
+| **Mon, May 11, 2026** | 99 | 45 | 32 | 13 | 54 | 53 | 51 | 51 | 0 | 2 | 3.70% | 98.1% | 1 | 1.85% | 0 | Mon | 2 | 20 |
+| **Sun, May 10, 2026** | 21 | 12 | 12 | 0 | 9 | 9 | 9 | 9 | 0 | 0 | 0.00% | 100.0% | 0 | 0.00% | 0 | Sun | 1 | 20 |
+
+## 📊 Detailed Case Management Dataset (Data Model View)
+
+This dataset architectural layout outlines the ticketing workflow performance. By categorizing volumes directly into functional complexities (Simple vs. Complex) at the source data layer, the model enables distinct SLA performance profiling:
+
+
+| DateSelector | Number of Cases | Inbound Cases | Outbound Cases | Complex Cases | Simple Cases | Case Reopened % | Avg. TTFR Customer SLA | Avg. TTR SLA < 6h (Simple) | Avg. TTR SLA < 12h (Complex) | Day of Week | Day Number | Previous Week |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Sat, May 16, 2026** | 83 | 52 | 31 | 77 | 6 | 4.82% | 96.15% | 100.00% | 71.43% | Sat | 7 | 20 |
+| **Fri, May 15, 2026** | 330 | 200 | 130 | 243 | 87 | 4.85% | 91.53% | 93.10% | 84.36% | Fri | 6 | 20 |
+| **Thu, May 14, 2026** | 196 | 123 | 73 | 143 | 53 | 5.10% | 98.33% | 100.00% | 81.82% | Thu | 5 | 20 |
+| **Wed, May 13, 2026** | 343 | 221 | 122 | 251 | 92 | 7.29% | 92.12% | 94.57% | 86.06% | Wed | 4 | 20 |
+| **Tue, May 12, 2026** | 384 | 212 | 172 | 283 | 101 | 7.55% | 96.13% | 92.08% | 83.39% | Tue | 3 | 20 |
+| **Mon, May 11, 2026** | 450 | 333 | 117 | 330 | 120 | 8.67% | 96.52% | 93.33% | 85.15% | Mon | 2 | 20 |
+| **Sun, May 10, 2026** | 70 | 32 | 38 | 45 | 25 | 8.57% | 93.75% | 100.00% | 71.11% | Sun | 1 | 20 |
